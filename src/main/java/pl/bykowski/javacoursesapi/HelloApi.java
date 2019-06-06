@@ -8,6 +8,6 @@ public class HelloApi {
 
     @GetMapping("/hello")
     public String get() {
-        return "hello CD";
+        return "hello CI/CD/CD";
     }
 }
