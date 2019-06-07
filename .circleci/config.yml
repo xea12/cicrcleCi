@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
     # specify the version you desire here
-    - image: circleci/openjdk:8u171-jdk
+    - image: openjdk:7-jdk-alpine
       environment:
         JDBC_DATABASE_URL: jdbc:postgresql://localhost:5432/javacoursesdb
         JDBC_DATABASE_USERNAME: root

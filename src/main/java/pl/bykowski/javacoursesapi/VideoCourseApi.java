@@ -20,6 +20,7 @@ public class VideoCourseApi {
 
     @GetMapping
     public List<VideoCourse> getVideoCourses() {
+        videoCourseRepository.findAll().stream().filter(element -> element.getName().equals("Docker od podstaw"));
         return videoCourseRepository.findAll();
     }
 
